@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="display" class="display" disabled>
+    <div class="buttons">
+        <button class="btn" value="7" onclick="press(7)">7</button>
+        <button class="btn" value="8" onclick="press(8)">8</button>
+        <button class="btn" value="9" onclick="press(9)">9</button>
+        <button class="btn operator" value="/" onclick="operator('/')">/</button>
+        <button class="btn" value="4" onclick="press(4)">4</button>
+        <button class="btn" value="5" onclick="press(5)">5</button>
+        <button class="btn" value="6" onclick="press(6)">6</button>
+        <button class="btn operator" value="*" onclick="operator('*')">*</button>
+        <button class="btn" value="1" onclick="press(1)">1</button>
+        <button class="btn" value="2" onclick="press(2)">2</button>
+        <button class="btn" value="3" onclick="press(3)">3</button>
+        <button class="btn operator" value="-" onclick="operator('-')">-</button>
+        <button class="btn" value="0" onclick="press(0)">0</button>
+        <button class="btn" value="." onclick="press('.')">.</button>
+        <button class="btn" value="P" onclick="press(3.14)">P</button>
+        <button class="btn clear" value="clear" onclick="clearInput()">C</button>
+        <button class="btn equal" value="=" onclick="res()">=</button>
+        <button class="btn operator" value="+" onclick="operator('+')">+</button>
+    </div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
