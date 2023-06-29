@@ -1,22 +1,28 @@
 body {
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-.calculator {
-    border: 1px solid #999;
-    border-radius: 5px;
+    padding: 0;
+    background-color: #9787F8;
+    }
+    
+    .calculator {
+    display: static;
+    position: absolute;
+    top: 11.9%;
+    left: 11%;
+    width: 23.9%;
+    height: 50%;
+    border: 8px outset black;
+    border-radius: 10px;
     background-color: #444;
     padding: 20px;
-}
-
-.display {
+    max-width: 500px;
+    max-height: 500px;
+    overflow: auto;
+    border-radius: 20% 10% 35%;
+    
+    }
+    
+    .display {
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
@@ -25,46 +31,106 @@ body {
     text-align: right;
     padding-right: 10px;
     font-size: 20px;
-}
-
-.buttons {
+    }
+    
+    .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-}
-
-.btn {
+    }
+    
+    .btn {
     background-color: #666;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
-}
-
-.btn:active {
+    border: 2px outset black;
+    border-radius: 20% 10% 40%;
+    }
+    
+    .btn:active {
     background-color: #888;
-}
-
-.operator {
+    }
+    
+    .operator {
     background-color: #f7921c;
-}
-.null{
-    background: rgba(74, 73, 73, 0.605);
-}
-
-.equal {
+    }
+    
+    .equal {
     background-color: #0f9d58;
-}
-
-.glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .clear {
     grid-column: span 2;
-}
+    background-color: #f34235;
+    }
+    
+    .container {
+      height: 100vh;
+      width: 100vw;
+    }
+    
+    .container:before {
+      content: "";
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 65px;
+      height: 100%;
+      background-color: white;
+      border-right: 4px solid black;
+    }
+    
+    
+    .horizontal-line:img {
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 65px;
+        right: 0;
+        height: 7px;
+        background-color: white;
+        border-bottom: 4px solid black;
+        }
+    
+    
+    .line {
+    position: relative;
+    top: -4px;
+    left: -1px;
+    }
+    
+    .human {
+      position: relative;
+      left: 50px;
+      
+    }
+    
+    img {
+    position: relative;
+    top: -2px;
+    left: 1px;
+    width: 60px;
+    height: 63px;
+    }
+    .image {
+        display: block;
+        margin: 1px 700px;
+        width: 750px;
+        height: 400px;
+      }
+      .glyphicon {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        grid-column: span 2;
+    }
