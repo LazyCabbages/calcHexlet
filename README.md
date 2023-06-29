@@ -1,3 +1,5 @@
-если нет express то npm install express
+если нет express то прописываем в терминале npm install express
 
-node routes/server.js
+для запуска сервера нужно прописать в терминале: node routes/server.js
+
+ip сервера http://localhost:3001/download

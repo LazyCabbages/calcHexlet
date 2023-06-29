@@ -48,12 +48,23 @@ body {
 .operator {
     background-color: #f7921c;
 }
+.null{
+    background: rgba(74, 73, 73, 0.605);
+}
 
 .equal {
     background-color: #0f9d58;
 }
 
-.clear {
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     grid-column: span 2;
-    background-color: #f34235;
 }
